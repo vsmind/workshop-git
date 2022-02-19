@@ -1,8 +1,5 @@
 # workshop-git
 
-[__TOC__]
-
-
 ## Clone project to local filesystem
 
 ```shell
@@ -34,3 +31,24 @@ git add test
 Check operation with `git status`
 
 ![img.png](_docs/images/part_2.png)
+
+Commit the file with `git commit` command
+
+```shell
+git commit
+```
+
+Default text edit will be open, you need to add a commit message and save the file to perform commit
+
+![img.png](_docs/images/part_3.png)
+
+You can check the `git status`
+
+![img.png](_docs/images/part_4.png)
+
+Push commit to the remote repository
+
+```shell
+git push
+```
+
