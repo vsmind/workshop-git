@@ -76,3 +76,55 @@ git add .
 ```
 
 ![img.png](_docs/images/part_7.png)
+
+> We can use `git add --all` or `git add -A`
+
+```
+git commit -m "Added test files"
+```
+
+Both files committed 
+
+![img.png](_docs/images/part_8.png)
+
+Push files to remote repository
+
+```shell
+git push
+```
+
+### Commit without staging
+
+Create files test files
+
+```shell
+touch file_no_stage_1
+touch file_no_stage_2
+touch file_no_stage_3
+```
+
+Try to run git commit without adding files to staging
+
+```shell
+git commit -m "Stage files"
+```
+
+![img.png](_docs/images/part_9.png)
+
+Files was not committed
+
+We can add all files and commit at once
+
+```shell
+git commit -a -m "Added no stage file"
+```
+
+Check that files was committed
+
+
+
+### TO_DO
+
+```shell
+git commit --amend -m "new message"
+```
