@@ -6,7 +6,7 @@
 git clone __SSH__PATH__ 
 ```
 
-## Commits
+## Commit
 
 Create a new file in a project folder for example with `touch` command
 
@@ -52,3 +52,8 @@ Push commit to the remote repository
 git push
 ```
 
+![img.png](_docs/images/part_5.png)
+
+```
+
+```
