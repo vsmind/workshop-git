@@ -67,7 +67,7 @@ Created files are not added to git, check it with `git status`
 git status                                                                                                                                     
 ```
 
-
+![img.png](_docs/images/part_6.png)
 
 Add both files to git, this time we will add all files 
 
