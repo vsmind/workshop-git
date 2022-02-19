@@ -75,3 +75,4 @@ Add both files to git, this time we will add all files
 git add .
 ```
 
+![img.png](_docs/images/part_7.png)
