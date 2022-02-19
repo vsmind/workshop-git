@@ -6,6 +6,21 @@
 git clone __SSH__PATH__ 
 ```
 
+## Create a new branch
+
+### Create branch from GitHub
+
+
+
+```
+git fetch
+```
+
+```
+
+```
+
+
 ## Commit
 
 Create a new file in a project folder for example with `touch` command
