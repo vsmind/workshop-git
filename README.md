@@ -54,21 +54,24 @@ git push
 
 ![img.png](_docs/images/part_5.png)
 
+Add 2 new files to the project folder
+
 ```shell
-touch test_file
+touch test_file_1
+touch test_file_2
 ```
 
-Created file is not added to git, check it with `git status`
+Created files are not added to git, check it with `git status`
 
 ```shell
 git status                                                                                                                                     
 ```
 
-![img.png](_docs/images/part_6.png)
 
-Add file to git
+
+Add both files to git, this time we will add all files 
 
 ```shell
-git add test_file
+git add .
 ```
 
