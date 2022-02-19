@@ -23,10 +23,14 @@ Run `git status`
 touch test
 ```
 
-![img.png](_docs/images/img.png)
+![img.png](_docs/images/part_1.png)
 
 Add created untracked file to git
 
 ```shell
 git add test
 ```
+
+Check operation with `git status`
+
+![img.png](_docs/images/part_2.png)
