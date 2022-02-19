@@ -6,6 +6,31 @@
 git clone __SSH__PATH__ 
 ```
 
+## Create a new branch
+
+### Create branch from GitHub
+
+
+
+```
+git fetch
+```
+
+Check the list of remote branches
+
+```shell
+git branch -a
+```
+
+Pull the changes from the remote
+This will creates a new local branch
+checkout this branch
+pull checnges from that branch
+
+```shell
+git checkout -b LOCAL_BRANCH_NAME origin/BRANCH_NAME
+```
+
 ## Commit
 
 Create a new file in a project folder for example with `touch` command
