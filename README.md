@@ -54,6 +54,21 @@ git push
 
 ![img.png](_docs/images/part_5.png)
 
+```shell
+touch test_file
 ```
 
+Created file is not added to git, check it with `git status`
+
+```shell
+git status                                                                                                                                     
 ```
+
+![img.png](_docs/images/part_6.png)
+
+Add file to git
+
+```shell
+git add test_file
+```
+
