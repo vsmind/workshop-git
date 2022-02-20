@@ -28,7 +28,7 @@ We are going to create and checkout branch from GitHub web interface first
 - Press `Create branch: new-branch`
 - Run `git fetch` to get list of changes from the remote
 
-```
+```shell
 git fetch
 ```
 
@@ -58,13 +58,13 @@ This command will do the following:
 
 - Create a new local branch with help of `git checkout`:
 
-```
+```shell
 git checkout -b branch-from-local-pc
 ```
 
 - Check that created branch exists only locally with `git branch -a`:
 
-```
+```shell
 git branch -a
 ```
 
@@ -72,7 +72,7 @@ git branch -a
 
 - push branch to remote with `git push` the `HEAD` shortcut allows us to push the branch to remote with the same name
 
-```
+```shell
 git push -u origin HEAD 
 ```
 
@@ -90,7 +90,7 @@ git push -u origin HEAD
 
 - check the local branches first with `git branch`:
 
-```
+```shell
 git branch
 ```
 
@@ -98,7 +98,7 @@ git branch
 
 - remove branch locally with `git branch` command:
 
-```
+```shell
 git branch -d branch-from-local-pc
 ```
 
@@ -108,7 +108,7 @@ git branch -d branch-from-local-pc
 
 - at the same time branch still exists on remote
 
-```
+```shell
 git branch -a
 ```
 
@@ -121,5 +121,9 @@ git push origin --delete branch-from-local-pc
 ```
 
 - confirm deletion with `git branch`
+
+```shell
+git branch -a
+```
 
 ![img_2.png](images/branching_10.png)
