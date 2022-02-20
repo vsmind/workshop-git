@@ -151,3 +151,7 @@ git commit --amend -m "New corrected commit message"
 - Check the last commit:
 
 ![img.png](images/commit_11.png)
+
+## Next step
+
+- Continue with [git merge workshop](../03_merge/README.md)

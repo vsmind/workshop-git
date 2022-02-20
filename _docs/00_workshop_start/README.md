@@ -20,3 +20,7 @@ Clone a project from GitHub with help of `git clone` command:
 ```shell
 git clone __SSH__PATH__ 
 ```
+
+## Next step
+
+- Continue with [git branch workshop](../01_branching/README.md)

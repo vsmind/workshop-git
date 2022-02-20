@@ -26,6 +26,26 @@ git config --global user.email "ola.nordmann@cegal.com"
 git config --global credential.helper cache
 ```
 
+## Remote
+
+- Check URL for remote branch
+
+```shell
+git remote -v
+```
+
+- Change remote to new URL
+
+```shell
+git remote set-url origin URL_TO_NEW_REMOTE
+```
+
+- More info about remote repo
+
+```shell
+git remote show origin
+```
+
 ## Useful tips
 
 Git uses basic editor as a pager for git result, sometimes this can be unpractical, we can change this behavior and use `cat`
