@@ -1,11 +1,5 @@
 # workshop-git
 
-## Clone project to local filesystem
-
-```shell
-git clone __SSH__PATH__ 
-```
-
 ## Commit
 
 Create a new file in a project folder for example with `touch` command
@@ -22,7 +16,7 @@ touch test
 
 ![img.png](_docs/images/part_1.png)
 
-Add created untracked file to git
+Stage created untracked file to git with `git add` command:
 
 ```shell
 git add test
@@ -32,17 +26,17 @@ Check operation with `git status`
 
 ![img.png](_docs/images/part_2.png)
 
-Commit the file with `git commit` command
+Save changes in repository with `git commit` command:
 
 ```shell
 git commit
 ```
 
-Default text edit will be open, you need to add a commit message and save the file to perform commit
+Default text edit will be open, you need to add a commit message and save the file to perform commit:
 
 ![img.png](_docs/images/part_3.png)
 
-You can check the `git status`
+Use `git status` to check the operation result:
 
 ![img.png](_docs/images/part_4.png)
 
