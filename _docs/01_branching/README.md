@@ -1,27 +1,12 @@
 # Branching
 
-## Clone project to local filesystem
-
-Clone a project from GitHub with help of `git clone` command:
-
-![img.png](images/branching_01.png)
-
-- Press `Code` button
-- Choose the protocol for cloning operation
-- Press `copy` button to copy clone URL  
-- Open terminal and run `git clone` command in  a folder where you want to clone project
-
-```shell
-git clone __SSH__PATH__ 
-```
-
 ## Create a new branch
 
 We are going to create and checkout branch from GitHub web interface first
 
 ### Create branch from GitHub
 
-![img.png](images/branching_02.png)
+![img.png](images/branching_01.png)
 
 - Press the branch selector
 - Write a name `new-branch` for the new branch
@@ -38,7 +23,7 @@ git fetch
 git branch -a
 ```
 
-![img.png](images/branching_03.png)
+![img.png](images/branching_02.png)
 
 You will see the list of your local and remote branches
 
@@ -68,7 +53,7 @@ git checkout -b branch-from-local-pc
 git branch -a
 ```
 
-![img.png](images/branching_04.png)
+![img.png](images/branching_03.png)
 
 - push branch to remote with `git push` the `HEAD` shortcut allows us to push the branch to remote with the same name
 
@@ -80,11 +65,11 @@ git push -u origin HEAD
 
 - run `git branch` command to confirm remote branch created:
 
-![img_1.png](images/branching_05.png)
+![img_1.png](images/branching_04.png)
 
 - this can be done in GitHub web interface:
 
-![img.png](images/branching_06.png)
+![img.png](images/branching_05.png)
 
 ## Remove branch
 
@@ -94,7 +79,7 @@ git push -u origin HEAD
 git branch
 ```
 
-![img.png](images/branching_07.png)
+![img.png](images/branching_06.png)
 
 - remove branch locally with `git branch` command:
 
@@ -104,7 +89,7 @@ git branch -d branch-from-local-pc
 
 - you can confirm deletion with `git branch`:
 
-![img.png](images/branching_08.png)
+![img.png](images/branching_07.png)
 
 - at the same time branch still exists on remote
 
@@ -112,7 +97,7 @@ git branch -d branch-from-local-pc
 git branch -a
 ```
 
-![img_1.png](images/branching_09.png)
+![img_1.png](images/branching_08.png)
 
 - remove remote branch with `git push` command 
 
@@ -126,4 +111,4 @@ git push origin --delete branch-from-local-pc
 git branch -a
 ```
 
-![img_2.png](images/branching_10.png)
+![img_2.png](images/branching_09.png)
