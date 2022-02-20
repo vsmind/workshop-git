@@ -134,4 +134,20 @@ git commit -a -m "Added no stage file"
 git commit -am "Stage commit_file_xxxxxx"
 ```
 
-- 
+- Check the last commit with `git log` command:
+
+```shell
+git log -1
+```
+
+![img.png](images/commit_10.png)
+
+- We can change the commit message of last commit:
+
+```shell
+git commit --amend -m "New corrected commit message"
+```
+
+- Check the last commit:
+
+![img.png](images/commit_11.png)
