@@ -109,9 +109,15 @@ Try to run git commit without adding files to staging
 git commit -m "Stage files"
 ```
 
-Files was not committed
+> Files was not committed, check the `git status`
 
-We can add all files and commit at once
+```shell
+git status
+```
+
+![img.png](images/commit_09.png)
+
+- We can add all files to the stage and then commit at once with `git commit`:
 
 ```shell
 git commit -a -m "Added no stage file"
