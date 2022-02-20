@@ -112,3 +112,7 @@ git branch -a
 ```
 
 ![img_2.png](images/branching_09.png)
+
+## Next step
+
+- Continue with [git commit workshop](../02_commit/README.md)
