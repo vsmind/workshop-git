@@ -85,3 +85,41 @@ git push -u origin HEAD
 - this can be done in GitHub web interface:
 
 ![img.png](images/branching_06.png)
+
+## Remove branch
+
+- check the local branches first with `git branch`:
+
+```
+git branch
+```
+
+![img.png](images/branching_07.png)
+
+- remove branch locally with `git branch` command:
+
+```
+git branch -d branch-from-local-pc
+```
+
+- you can confirm deletion with `git branch`:
+
+![img.png](images/branching_08.png)
+
+- at the same time branch still exists on remote
+
+```
+git branch -a
+```
+
+![img_1.png](images/branching_09.png)
+
+- remove remote branch with `git push` command 
+
+```shell
+git push origin --delete branch-from-local-pc
+```
+
+- confirm deletion with `git branch`
+
+![img_2.png](images/branching_10.png)
