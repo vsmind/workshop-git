@@ -123,4 +123,15 @@ git status
 git commit -a -m "Added no stage file"
 ```
 
-Check that files was committed
+> Check that files was committed
+
+### Rephrase last commit
+
+- Add another change to `commit_file_1`
+- Commit file with error message
+
+```shell
+git commit -am "Stage commit_file_xxxxxx"
+```
+
+- 
