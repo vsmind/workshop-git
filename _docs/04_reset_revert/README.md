@@ -85,10 +85,28 @@ git reset HEAD filename
 
 ## Git revert
 
+- Checkout remote branch `05-revert-practice`
+
+```shell
+git checkout -b 05-revert-practice origin/05-revert-practice
+```
+
+- Check git history for the last 5 commits
+
+```shell
+git log --pretty=oneline -n 5
+```
+
 - Revert the latest commit by using the head alias in `git revert` command:
 
 ```shell
 git revert HEAD
+```
+
+- Check the git log, you will see new revert commit
+
+```shell
+git log --pretty=oneline -n 6
 ```
 
 - We can revert specified commit by passing commit sha to the `git revert` command:
