@@ -1,21 +1,8 @@
-# Git reset / git revert
+# Cherry-pick
 
-## Git reset
+## Next steps
 
-```shell
-git reset HEAD filename
-```
+[<<< git reset/revert](../04_reset_revert/README.md) |
+[git rebase >>>](../06_rebase/README.md)
 
-## Git revert
 
-- Revert the latest commit by using the head alias in `git revert` command:
-
-```shell
-git revert HEAD
-```
-
-- We can revert specified commit by passing commit sha to the `git revert` command:
-
-```shell
-git revert COMMIT_ID
-```

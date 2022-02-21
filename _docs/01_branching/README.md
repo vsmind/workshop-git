@@ -115,5 +115,5 @@ git branch -a
 
 ## Next step
 
-[<<<workshop start](../00_workshop_start/README.md)
+[<<<workshop start](../00_workshop_start/README.md) |
 [git commit >>>](../02_commit/README.md)

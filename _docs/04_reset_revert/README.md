@@ -115,7 +115,15 @@ git log --pretty=oneline -n 6
 git revert COMMIT_ID
 ```
 
+> Write revert message and save it to complete commit
+
+- Check the git log, you will see new revert commit as a latest commit in git history:
+
+```shell
+git log --pretty=oneline -n 5
+```
+
 ## Next steps
 
-[<<< git merge](../03_merge/README.md)
+[<<< git merge](../03_merge/README.md) |
 [git cherry-pick >>>](../05_cherry_pick/README.md)

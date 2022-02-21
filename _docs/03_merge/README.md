@@ -25,5 +25,5 @@ git merge 02-merge-practice
 
 Resolve conflicts
 
-[<<< git commit](../02_commit/README.md)
+[<<< git commit](../02_commit/README.md) |
 [git reset/revert >>>](../04_reset_revert/README.md)
