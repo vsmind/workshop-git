@@ -2,6 +2,25 @@
 
 ## Git reset
 
+- Checkout remote branch `04-reset-practice`
+
+```shell
+git checkout -b 04-reset-practice origin/04-reset-practice
+```
+
+- edit file `reset_test` in project root
+- commit file and check log
+
+```
+git commit -am "Changed test file"
+```
+
+- Reset the latest commit and keep changes
+
+```shell
+git reset --soft HEAD^
+```
+
 ```shell
 git reset HEAD filename
 ```
