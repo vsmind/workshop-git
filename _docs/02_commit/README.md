@@ -154,4 +154,5 @@ git commit --amend -m "New corrected commit message"
 
 ## Next step
 
-- Continue with [git merge workshop](../03_merge/README.md)
+[<<< git merge](../01_branching/README.md) |
+[git merge >>>](../03_merge/README.md)
