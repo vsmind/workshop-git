@@ -20,7 +20,7 @@ git commit -am "Changed test file"
 - Check latest commit
 
 ```shell
-git log -n 1 
+git log --pretty=oneline -n 1 
 ```
 
 - Reset the latest commit and keep changes
@@ -32,7 +32,7 @@ git reset --soft HEAD^
 - Check `git log` to confirm that latest commit removed
 
 ```shell
-git log -n 2
+git log --pretty=oneline -n 2
 ```
 
 - If you open `reset_test` file, you will see that changes is there ready to be committed 
@@ -61,7 +61,7 @@ git commit -am "reset_test three"
 - Check the git log for the last 3 commits:
 
 ```shell
-git log -n 3
+git log --pretty=oneline -n 3
 ```
 
 - Lets run hard reset and remove 2 last commits:
@@ -73,10 +73,10 @@ git reset --hard HEAD~2
 - Check the command result with `git log`:
 
 ```shell
-git log -n 3
+git log --pretty=oneline -n 3
 ```
 
-> you can see that commits are removed and
+> you can see that commits are removed and file reverted to "reset_test one" commit
 
 
 ```shell
