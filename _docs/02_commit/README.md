@@ -24,7 +24,7 @@ touch test
 git status
 ```
 
-![img.png](_docs/images/part_1.png)
+![img.png](images/commit_01.png)
 
 - Stage created untracked file with `git add` command:
 
@@ -34,7 +34,7 @@ git add test
 
 - Check operation with `git status`
 
-![img.png](_docs/images/part_2.png)
+![img.png](images/commit_02.png)
 
 - Save changes in repository with `git commit` command:
 
@@ -44,11 +44,11 @@ git commit
 
 > Default text edit will be open, you need to add a commit message and save the file to perform commit:
 
-![img.png](_docs/images/part_3.png)
+![img.png](images/commit_03.png)
 
 - Use `git status` to check the operation result:
 
-![img.png](_docs/images/part_4.png)
+![img.png](images/commit_04.png)
 
 - Push commit to the remote repository with `git push` command:
 
@@ -56,7 +56,7 @@ git commit
 git push
 ```
 
-![img.png](_docs/images/part_5.png)
+![img.png](images/commit_05.png)
 
 - Add 2 new files to the project folder
 
@@ -71,7 +71,7 @@ touch test_file_2
 git status                                                                                                                                     
 ```
 
-![img.png](_docs/images/part_6.png)
+![img.png](images/commit_06.png)
 
 - Add both files to git, this time we will add all files
 
@@ -79,7 +79,7 @@ git status
 git add .
 ```
 
-![img.png](_docs/images/part_7.png)
+![img.png](images/commit_07.png)
 
 > We can use `git add --all` or `git add -A`
 
@@ -91,7 +91,7 @@ git commit -m "Added test files"
 
 > Both files committed
 
-![img.png](_docs/images/part_8.png)
+![img.png](images/commit_08.png)
 
 - Push files to remote repository with `git push` command
 
