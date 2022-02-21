@@ -23,4 +23,4 @@ git clone __SSH__PATH__
 
 ## Next step
 
-- Continue with [git branch workshop](../01_branching/README.md)
+[git branch >>>](../01_branching/README.md)
