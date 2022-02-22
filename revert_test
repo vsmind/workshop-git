@@ -1,3 +1,4 @@
 Test file for git revert demo.
 We will revert some text lines.
 This will be done by git revert command.
+We will revert this line
