@@ -152,7 +152,7 @@ git commit --amend -m "New corrected commit message"
 
 ![img.png](images/commit_11.png)
 
-## Next step
+## Navigation
 
 [<<< git merge](../01_branching/README.md) |
 [git merge >>>](../03_merge/README.md)

@@ -12,6 +12,12 @@ git branch stash-test
 touch test-file-for-stash
 ```
 
+- Add created file to the index
+
+```shell
+git add .
+```
+
 - Put current changes in your working directory into stash for later use with `git stash`
 
 ```shell
@@ -24,10 +30,16 @@ git stash
 touch test-file-pop
 ```
 
-- Run `git stash` command to add it to stash
+- Add new file to git index:
+
+```shell
+git add test-file-pop
+```
+
+- Run `git stash save` command to add file to stash with predefined message
 
 ```
-git stash
+git stash save "stash to pop"
 ```
 
 - changes added to stash, we can check the list of currently created stashes with `git stash list` command:
@@ -47,7 +59,13 @@ git stash pop
 - Delete a specific stash from all stashes with `git stash drop` command:
 
 ```shell
-git stash drop
+git stash drop 0
+```
+
+- We removed the first created stash from the list: 
+
+```shell
+git stash list
 ```
 
 ## Navigation

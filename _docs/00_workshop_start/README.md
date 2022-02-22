@@ -21,6 +21,6 @@ Clone a project from GitHub with help of `git clone` command:
 git clone __SSH__PATH__ 
 ```
 
-## Next step
+## Navigation
 
 [git branch >>>](../01_branching/README.md)

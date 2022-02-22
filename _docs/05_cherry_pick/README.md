@@ -59,7 +59,7 @@ git log --pretty=oneline -n 2
 git status
 ```
 
-## Next steps
+## Navigation
 
 [<<< git reset/revert](../04_reset_revert/README.md) |
 [git rebase >>>](../06_rebase/README.md)

@@ -113,7 +113,7 @@ git branch -a
 
 ![img_2.png](images/branching_09.png)
 
-## Next step
+## Navigation
 
 [<<<workshop start](../00_workshop_start/README.md) |
 [git commit >>>](../02_commit/README.md)

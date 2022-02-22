@@ -123,7 +123,7 @@ git revert COMMIT_ID
 git log --pretty=oneline -n 5
 ```
 
-## Next steps
+## Navigation
 
 [<<< git merge](../03_merge/README.md) |
 [git cherry-pick >>>](../05_cherry_pick/README.md)
