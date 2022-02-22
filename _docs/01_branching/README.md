@@ -55,15 +55,20 @@ git branch -a
 
 ![img.png](images/branching_03.png)
 
-- push branch to remote with `git push` the `HEAD` shortcut allows us to push the branch to remote with the same name
+- push branch to remote with `git push` command:
 
 ```shell
 git push -u origin HEAD 
 ```
 
+> `HEAD` shortcut allows us to push the branch to remote with the same name
 > `git push -u origin branch-from-local-pc`
 
 - run `git branch` command to confirm remote branch created:
+
+```
+git branch -a
+```
 
 ![img_1.png](images/branching_04.png)
 
@@ -89,9 +94,13 @@ git branch -d branch-from-local-pc
 
 - you can confirm deletion with `git branch`:
 
+```shell
+git branch
+```
+
 ![img.png](images/branching_07.png)
 
-- at the same time branch still exists on remote
+> Branch removed locally but at the same time branch still exist on remote
 
 ```shell
 git branch -a

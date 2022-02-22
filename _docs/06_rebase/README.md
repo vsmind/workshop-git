@@ -56,13 +56,13 @@ git rebase 10-main-rebase
 
 - Checkout `10-main-rebase` branch
 
-```
+```shell
 git checkout 10-main-rebase
 ```
 
 - Merge feature branch
 
-```
+```shell
 git merge 11-rebase-feature-1
 ```
 
@@ -80,13 +80,13 @@ git rebase 10-main-rebase
 
 - Checkout `10-main-rebase` branch
 
-```
+```shell
 git checkout 10-main-rebase
 ```
 
 - Merge feature 2 branch
 
-```
+```shell
 git merge 12-rebase-feature-2
 ```
 
@@ -127,13 +127,13 @@ git rebase -i 13-main-squash
 
 - Checkout `13-main-squash` branch
 
-```
+```shell
 git checkout 13-main-squash
 ```
 
 - Merge feature branch
 
-```
+```shell
 git merge 14-squash-feature-1
 ```
 
@@ -154,13 +154,13 @@ git rebase -i 13-main-squash
 
 - Checkout `13-main-squash` branch
 
-```
+```shell
 git checkout 13-main-squash
 ```
 
 - Merge feature 2 branch
 
-```
+```shell
 git merge 15-squash-feature-2
 ```
 

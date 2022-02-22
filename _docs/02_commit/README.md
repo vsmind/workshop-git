@@ -26,7 +26,9 @@ git status
 
 ![img.png](images/commit_01.png)
 
-- Stage created untracked file with `git add` command:
+> File marked ass untracked
+
+- Add created untracked file to the git index with `git add FILE_NAME` command:
 
 ```shell
 git add test
@@ -36,7 +38,9 @@ git add test
 
 ![img.png](images/commit_02.png)
 
-- Save changes in repository with `git commit` command:
+> File marked as ready to be committed
+
+- Save changes in local git repository with `git commit` command:
 
 ```shell
 git commit
@@ -47,6 +51,10 @@ git commit
 ![img.png](images/commit_03.png)
 
 - Use `git status` to check the operation result:
+
+```shell
+git status
+```
 
 ![img.png](images/commit_04.png)
 
@@ -73,7 +81,7 @@ git status
 
 ![img.png](images/commit_06.png)
 
-- Add both files to git, this time we will add all files
+- Add both files to git index, this time we will add all files with `git add .` command:
 
 ```shell
 git add .
@@ -82,14 +90,13 @@ git add .
 ![img.png](images/commit_07.png)
 
 > We can use `git add --all` or `git add -A`
+> Both files added to index
 
-- we can commit files with the message by `git commit` command
+- Commit files with the message by `git commit -m "COMMIT_MESSAGE"` command:
 
-```
+```shell
 git commit -m "Added test files"
 ```
-
-> Both files committed
 
 ![img.png](images/commit_08.png)
 
@@ -109,7 +116,7 @@ Try to run git commit without adding files to staging
 git commit -m "Stage files"
 ```
 
-> Files was not committed, check the `git status`
+> Files was not committed, use `git status` command to check file status: 
 
 ```shell
 git status
@@ -117,13 +124,18 @@ git status
 
 ![img.png](images/commit_09.png)
 
-- We can add all files to the stage and then commit at once with `git commit`:
+- Add all files to the stage and then commit at once with `git commit`:
 
 ```shell
 git commit -a -m "Added no stage file"
 ```
 
 > Check that files was committed
+> This command will work only with files previously added to git index
+
+```shell
+git status
+```
 
 ### Rephrase last commit
 
@@ -137,7 +149,7 @@ git commit -am "Stage commit_file_xxxxxx"
 - Check the last commit with `git log` command:
 
 ```shell
-git log -1
+git log --oneline -1
 ```
 
 ![img.png](images/commit_10.png)
@@ -149,6 +161,10 @@ git commit --amend -m "New corrected commit message"
 ```
 
 - Check the last commit:
+
+```shell
+git log --oneline -1
+```
 
 ![img.png](images/commit_11.png)
 
