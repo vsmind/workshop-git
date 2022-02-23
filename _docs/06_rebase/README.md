@@ -2,25 +2,27 @@
 
 ## Merge without rebase
 
-- Checkout remote branch `07-main-merge-no-rebase`
+- Checkout remote branch `08-main-merge-no-rebase`
 
 ```shell
-git checkout -b 07-main-merge-no-rebase origin/07-main-merge-no-rebase
+git checkout -b 08-main-merge-no-rebase origin/08-main-merge-no-rebase
 ```
 
-- Let merge feature branch `08-main-merge-no-rebase-feature-1` to `07-main-merge-no-rebase`
+- Merge feature branch `09-main-merge-no-rebase-feature-1` to `08-main-merge-no-rebase`
 
 ```shell
-git merge 08-main-merge-no-rebase-feature-1
+git merge 09-main-merge-no-rebase-feature-1
 ```
 
 > This will open editor to create merge commit
 
-- Merge feature branch `09-main-merge-no-rebase-feature-2` to `07-main-merge-no-rebase`
+- Merge feature branch `10-main-merge-no-rebase-feature-2` to `08-main-merge-no-rebase`
 
 ```shell
-git merge 09-main-merge-no-rebase-feature-2
+git merge 10-main-merge-no-rebase-feature-2
 ```
+
+> This will open editor to create merge commit
 
 - Check log for our branch
 
@@ -32,62 +34,62 @@ git log --all --decorate --oneline --graph -n 10
 
 ## Rebase
 
-We will work with branch 10-main-rebase as its our main branch. 
-2 developers worked with two feature branch parallel.
-We will merge their code to master branch with rebase
+We will work with branch 11-main-rebase as it's our main branch. 
+2 developers worked with two feature branches in parallel.
+We will merge their code to main branch with `git rebase`
 
-- Checkout remote branch `10-main-rebase`
+- Checkout remote branch `11-main-rebase`
 
 ```shell
-git checkout -b 10-main-rebase origin/10-main-rebase
+git checkout -b 11-main-rebase origin/11-main-rebase
 ```
 
-- Checkout feature branch 1
+- Checkout feature branch 1 `12-rebase-feature-1`
 
 ```shell
-git checkout -b 11-rebase-feature-1 origin/11-rebase-feature-1
+git checkout -b 12-rebase-feature-1 origin/12-rebase-feature-1
 ```
 
 - This branch has 2 new commits. Run `git rebase` command:
 
 ```shell
-git rebase 10-main-rebase
+git rebase 11-main-rebase
 ```
 
-- Checkout `10-main-rebase` branch
+- Checkout `11-main-rebase` branch
 
 ```shell
-git checkout 10-main-rebase
+git checkout 11-main-rebase
 ```
 
-- Merge feature branch
+- Merge feature branch `12-rebase-feature-1`
 
 ```shell
-git merge 11-rebase-feature-1
+git merge 12-rebase-feature-1
 ```
 
-- Checkout feature branch 2
+- Checkout feature branch 2 `13-rebase-feature-2`
 
 ```shell
-git checkout -b 12-rebase-feature-2 origin/12-rebase-feature-2
+git checkout -b 13-rebase-feature-2 origin/13-rebase-feature-2
 ```
 
 - This branch has 3 new commits. Run `git rebase` command:
 
 ```shell
-git rebase 10-main-rebase
+git rebase 11-main-rebase
 ```
 
-- Checkout `10-main-rebase` branch
+- Checkout `11-main-rebase` branch:
 
 ```shell
-git checkout 10-main-rebase
+git checkout 11-main-rebase
 ```
 
-- Merge feature 2 branch
+- Merge feature 2 branch:
 
 ```shell
-git merge 12-rebase-feature-2
+git merge 13-rebase-feature-2
 ```
 
 - Check log for our branch
@@ -96,72 +98,72 @@ git merge 12-rebase-feature-2
 git log --all --decorate --oneline --graph -n 10
 ```
 
-> git log is linear
+> Git log is linear
 
 ## Interactive rebase with squash
 
-We will work with branch 13-main-squash as it's our main branch.
-2 developers worked with two feature branch parallel.
-We will merge their code to master branch with interactive rebase
+We will work with branch `14-main-squash` as it's our main branch.
+2 developers worked with two feature branches in parallel.
+We will merge their code to main branch with interactive rebase.
 
-- Checkout remote branch `13-main-squash`
+- Checkout remote branch `14-main-squash`:
 
 ```shell
-git checkout -b 13-main-squash origin/13-main-squash
+git checkout -b 14-main-squash origin/14-main-squash
 ```
 
-- Checkout feature branch 1
+- Checkout feature branch 1:
 
 ```shell
-git checkout -b 14-squash-feature-1 origin/14-squash-feature-1
+git checkout -b 15-squash-feature-1 origin/15-squash-feature-1
 ```
 
 - This branch has 2 new commits. Run `git rebase -i` command:
 
 ```shell
-git rebase -i 13-main-squash
+git rebase -i 14-main-squash
 ```
 
 > This will open interactive prompt where you should change the operation type to `squash` or `s`
 > Then you will need to write/choose commit message
 
-- Checkout `13-main-squash` branch
+- Checkout `14-main-squash` branch:
 
 ```shell
-git checkout 13-main-squash
+git checkout 14-main-squash
 ```
 
-- Merge feature branch
+- Merge feature branch `15-squash-feature-1`:
 
 ```shell
-git merge 14-squash-feature-1
+git merge 15-squash-feature-1
 ```
 
-- Checkout feature branch 2
+- Checkout feature branch 2 `16-squash-feature-2`:
 
 ```shell
-git checkout -b 15-squash-feature-2 origin/15-squash-feature-2
+git checkout -b 16-squash-feature-2 origin/16-squash-feature-2
 ```
 
 - This branch has 3 new commits. Run `git rebase -i` command:
 
 ```shell
-git rebase -i 13-main-squash
+git rebase -i 14-main-squash
 ```
 
 > This will open interactive prompt where you should change the operation type to `squash` or `s`
 > Then you will need to write/choose commit message
 
-- Checkout `13-main-squash` branch
+- Checkout `14-main-squash` branch
 
 ```shell
-git checkout 13-main-squash
+git checkout 14-main-squash
 ```
 
-- Merge feature 2 branch
+- Merge feature 2 branch `16-squash-feature-2`:
 
 ```shell
-git merge 15-squash-feature-2
+git merge 16-squash-feature-2
 ```
 
 - Check log for our branch

@@ -13,23 +13,23 @@ git checkout -b 06-cherry-pick origin/06-cherry-pick
 git log --pretty=oneline -n 6 origin/07-cherry-pick-source
 ```
 
-- copy commit SHA for "cherry-pick basic" commit and use it in `git cherry-pick` command:
+- copy commit SHA for "Create file_for_cherry_pick" commit and use it in `git cherry-pick` command:
 
 ```shell
-git cherry-pick dddf3a4cc5504bb4b8ee213b57129dfb1f48b732
+git cherry-pick f8c3b00d0790e66240c7536e450346e6c7d02d8e
 ```
 
 - check the current log and see that you have cherry-pick commit on top of log
 
 ```shell
-git log --pretty=oneline -n 2
+git log --pretty=oneline -n 5
 ```
 
-- copy commit SHA for "cherry-pick with edit" commit
+- copy commit SHA for "Change this commit message when cherry-pick" commit `98b6d7f0e01e137bcc0c6c3fe2be473abb9d9b83`,
 - use `git cherry-pick -edit` command to get commit but change commit message:
 
 ```shell
-git cherry-pick --edit c0b6e4f84eebcef41a5bafaf3684d9229894c2db 
+git cherry-pick --edit 98b6d7f0e01e137bcc0c6c3fe2be473abb9d9b83 
 ```
 
 > Default editor will be open where you can change the commit message
@@ -37,14 +37,14 @@ git cherry-pick --edit c0b6e4f84eebcef41a5bafaf3684d9229894c2db
 - check the current log and see that you have cherry-pick commit with the new message
 
 ```shell
-git log --pretty=oneline -n 2
+git log --pretty=oneline -n 5
 ```
 
-- copy commit SHA for "cherry-pick without commit" commit
+- copy commit SHA for "Cherry-pick without commit" commit `7c2a0911265ae62b6a5a43c6e89ad5eba48dffed`
 - use `git cherry-pick --no-commit` command to move content of the target commit into the working directory:
 
 ```shell
-git cherry-pick --no-commit f0e6abdae0cde91a8a6b1717471969fdfd5fb609
+git cherry-pick --no-commit 7c2a0911265ae62b6a5a43c6e89ad5eba48dffed
 ```
 
 - check the current log and see that cherry-pick have not created a new commit in your branch

@@ -112,9 +112,10 @@ git log --pretty=oneline -n 6
 - We can revert specified commit by passing commit sha to the `git revert` command:
 
 ```shell
-git revert COMMIT_ID
+git revert 54c1bfac22f86772d861f21a39c4c038a17c2326
 ```
 
+> We are reverting `Added file_for_revert` commit with COMMIT_SHA 54c1bfac22f86772d861f21a39c4c038a17c2326
 > Write revert message and save it to complete commit
 
 - Check the git log, you will see new revert commit as a latest commit in git history:
