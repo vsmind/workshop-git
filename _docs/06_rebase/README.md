@@ -124,7 +124,12 @@ git checkout -b 15-squash-feature-1 origin/15-squash-feature-1
 git rebase -i 14-main-squash
 ```
 
+![img.png](img.png)
+
 > This will open interactive prompt where you should change the operation type to `squash` or `s`
+
+
+
 > Then you will need to write/choose commit message
 
 - Checkout `14-main-squash` branch:
