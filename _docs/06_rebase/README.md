@@ -11,7 +11,7 @@ git checkout -b 08-main-merge-no-rebase origin/08-main-merge-no-rebase
 - Merge feature branch `09-main-merge-no-rebase-feature-1` to `08-main-merge-no-rebase`
 
 ```shell
-git merge 09-main-merge-no-rebase-feature-1
+git merge origin/09-main-merge-no-rebase-feature-1
 ```
 
 > This will open editor to create merge commit
@@ -19,7 +19,7 @@ git merge 09-main-merge-no-rebase-feature-1
 - Merge feature branch `10-main-merge-no-rebase-feature-2` to `08-main-merge-no-rebase`
 
 ```shell
-git merge 10-main-merge-no-rebase-feature-2
+git merge origin/10-main-merge-no-rebase-feature-2
 ```
 
 > This will open editor to create merge commit
@@ -133,6 +133,8 @@ git rebase -i 14-main-squash
 > Then you will need to write/choose commit message
 
 ![img_3.png](images/rebase_3.png)
+
+> To remove commit messages put # in start of line
 
 - Checkout `14-main-squash` branch:
 

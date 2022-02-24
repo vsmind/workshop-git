@@ -20,10 +20,20 @@ git config --global user.name "Ola"
 git config --global user.email "ola.nordmann@cegal.com"
 ```
 
-- Cache login credentials
+- Open GitHub setting -> Developer setting 
+
+- Open `Personal access token`
+
+![img.png](images/config-1.png)
+
+- Press `Generate new token` button
+- Create a new token and copy it, you will use it as a password
+
+- Cache login credentials, git saves credentials, and you don't need to enter them all the time
 
 ```shell
-git config --global credential.helper cache
+git config --global credential.helper store
+git pull
 ```
 
 ## Remote

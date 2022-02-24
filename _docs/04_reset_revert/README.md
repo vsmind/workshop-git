@@ -35,18 +35,24 @@ git reset --soft HEAD^
 git log --pretty=oneline -n 2
 ```
 
+- Check log
+
+```
+git status
+```
+
 - If you open `reset_test` file, you will see that changes is there ready to be committed 
 
 ### Hard reset
 
-- Now lets see on hard reset
+- Now lets look at hard reset
 - Add a new line to `reset_test` file and commit it:
 
 ```shell
 git commit -am "reset_test one"
 ```
 
-- Let repeat the previous step and add new line and commit:
+- Repeat the previous step and add new line and commit:
 
 ```shell
 git commit -am "reset_test two"
@@ -77,11 +83,6 @@ git log --pretty=oneline -n 3
 ```
 
 > you can see that commits are removed and file reverted to "reset_test one" commit
-
-
-```shell
-git reset HEAD filename
-```
 
 ## Git revert
 

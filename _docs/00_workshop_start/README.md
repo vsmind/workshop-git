@@ -10,6 +10,8 @@ Press `fork` button, project will be forked to your workspace
 
 Clone a project from GitHub with help of `git clone GIT_URL` command:
 
+To find git clone url  
+
 ![img.png](images/start_02.png)
 
 - Press `Code` button

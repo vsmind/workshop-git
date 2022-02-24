@@ -25,6 +25,12 @@ git merge 02-merge-practice
 
 Resolve conflicts
 
+Commit changes with `git commit`
+
+```
+git commit -am "Merge branch"
+```
+
 ## Navigation
 
 [<<< git commit](../02_commit/README.md) |

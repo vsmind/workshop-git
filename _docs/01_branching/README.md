@@ -27,14 +27,14 @@ git branch -a
 
 You will see the list of your local and remote branches
 
-- checkout created remote branch with `git checkout` command:
+- checkout created remote branch with `git checkout -b LOCAL_BRANCH_NAME origin/BRANCH_NAME` command:
 
 ```shell
-git checkout -b LOCAL_BRANCH_NAME origin/BRANCH_NAME
+git checkout -b new-branch origin/new-branch
 ```
 
 This command will do the following:
-> - Pull changes from the remote
+
 > - Creates a new local branch
 > - Checkout this local branch
 > - Pull changes from remote branch 
@@ -86,7 +86,13 @@ git branch
 
 ![img.png](images/branching_06.png)
 
-- remove branch locally with `git branch` command:
+- first change branch back to master with `git checkout`
+
+```shell
+git checkout master
+```
+
+- remove branch locally with `git branch -d` command:
 
 ```shell
 git branch -d branch-from-local-pc

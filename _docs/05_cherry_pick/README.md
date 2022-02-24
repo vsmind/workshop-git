@@ -6,18 +6,20 @@
 git checkout -b 06-cherry-pick origin/06-cherry-pick
 ```
 
-- get commit from another branch to our with help of `git cherry-pick`
 - check git log on target branch
 
 ```shell
 git log --pretty=oneline -n 6 origin/07-cherry-pick-source
 ```
 
+- get commit from another branch to our with help of `git cherry-pick`
 - copy commit SHA for "Create file_for_cherry_pick" commit and use it in `git cherry-pick` command:
 
 ```shell
 git cherry-pick f8c3b00d0790e66240c7536e450346e6c7d02d8e
 ```
+
+![img.png](images/cherry-pick-1.png)
 
 - check the current log and see that you have cherry-pick commit on top of log
 
@@ -57,6 +59,12 @@ git log --pretty=oneline -n 2
 
 ```shell
 git status
+```
+
+- Reset changes with `git reset --hard`
+
+```shell
+git reset --hard
 ```
 
 ## Navigation
