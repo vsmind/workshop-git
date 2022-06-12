@@ -12,10 +12,16 @@ git checkout -b 01-commit-practice origin/01-commit-practice
 
 ## Commit
 
-- Create a new file in a project folder for example with `touch` command
+- Create a new file in a project folder for example with `touch` command if you are running **Linux/Mac-OS**
 
 ```shell
 touch test
+```
+
+- If you are using **Windows** you can create an empty file with `copy` command:
+
+```powershell
+copy NUL test
 ```
 
 - Run `git status` to check the state of the repository 
@@ -50,6 +56,10 @@ git commit
 
 ![img.png](images/commit_03.png)
 
+> `vi` press `ESC` to exit from edit mode, write `:wq` to save commit message and exit
+
+> `emacs` press `CTRL` + `S` to save message and then `CTRL` + `C` to exit editor
+
 - Use `git status` to check the operation result:
 
 ```shell
@@ -66,11 +76,18 @@ git push
 
 ![img.png](images/commit_05.png)
 
-- Add 2 new files to the project folder
+- Add 2 new files to the project folder with `touch` command if you are running **Linux/Mac-OS**
 
 ```shell
 touch test_file_1
 touch test_file_2
+```
+
+- If you are using **Windows**, use `copy` command to create empty files:
+
+```powershell
+copy NUL test_file_1
+copy NUL test_file_2
 ```
 
 > Created files are not added to git, check it with `git status` command:
