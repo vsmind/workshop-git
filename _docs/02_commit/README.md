@@ -18,10 +18,16 @@ git checkout -b 01-commit-practice origin/01-commit-practice
 touch test
 ```
 
-- If you are using **Windows** you can create an empty file with `copy` command:
+- If you are using **Windows command prompt** you can create an empty file with `copy` command:
 
 ```powershell
 copy NUL test
+```
+
+- If you are using **Windows powershell** you can create an empty file with `New-Item` command:
+
+```powershell
+New-Item -Path './test' -ItemType File
 ```
 
 - Run `git status` to check the state of the repository 
@@ -56,9 +62,15 @@ git commit
 
 ![img.png](images/commit_03.png)
 
-> `vi` press `ESC` to exit from edit mode, write `:wq` to save commit message and exit
+> `vi` editor
+> - Enter *Insert* mode by pressing `i` button 
+> - Write commit message, 
+> - Press `ESC` to exit from *Insert* mode
+> - Write `:wq` to save commit message and exit.
 
-> `emacs` press `CTRL` + `S` to save message and then `CTRL` + `C` to exit editor
+> `emacs` editor
+> - Press `CTRL` + `S` to save message and then 
+> - Press `CTRL` + `C` to exit editor
 
 - Use `git status` to check the operation result:
 
@@ -88,6 +100,13 @@ touch test_file_2
 ```powershell
 copy NUL test_file_1
 copy NUL test_file_2
+```
+
+- If you are using **Windows powershell**, use `New-Item` command:
+
+```powershell
+New-Item -Path './test_file_1' -ItemType File
+New-Item -Path './test_file_2' -ItemType File
 ```
 
 > Created files are not added to git, check it with `git status` command:
