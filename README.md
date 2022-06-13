@@ -8,4 +8,5 @@
 - [Git cherry-pick](./_docs/05_cherry_pick/README.md)
 - [Git rebase](./_docs/06_rebase/README.md)
 - [Git stash](./_docs/07_stash/README.md)
+- [Git worktree](./_docs/08_worktree/README.md)
 - [Git config](./_docs/config/README.md)

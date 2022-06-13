@@ -70,6 +70,5 @@ git stash list
 
 ## Navigation
 
-[<<< git rebase](../06_rebase/README.md) 
-
-
+[<<< git rebase](../06_rebase/README.md)
+[git worktree >>>](../08_worktree/README.md)
