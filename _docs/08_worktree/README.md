@@ -1,6 +1,6 @@
 # Git worktree
 
-- Checkout remote branch `08-worktree`
+- Checkout remote branch `17-worktree`
 
 ```shell
 git checkout -b 17-worktree origin/17-worktree
