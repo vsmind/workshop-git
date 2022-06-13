@@ -3,7 +3,7 @@
 - Checkout remote branch `08-worktree`
 
 ```shell
-git checkout -b 08-worktree origin/08-worktree
+git checkout -b 17-worktree origin/17-worktree
 ```
 
 - Add some changes in worktree.txt in project folder
